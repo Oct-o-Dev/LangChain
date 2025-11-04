@@ -1,0 +1,119 @@
+// ...existing code...
+# Python bytecode, caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+
+# Virtual environments (common names)
+venv/
+.venv/
+env/
+ENV/
+venv*/
+nenv/
+.Python
+
+# Pip / cache
+*.pip-wheel-metadata
+# local pip cache (if stored in repo)
+.cache/pip/
+pip-log.txt
+
+# IDEs / editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Tests / pytest
+.pytest_cache/
+.nox/
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Secrets / env files
+.env
+.env.*
+.env.local
+secrets.json
+credentials.json
+
+# Model / weights / checkpoints (AI/ML)
+*.ckpt
+*.ckpt.*
+*.pt
+*.pth
+*.h5
+*.onnx
+*.bin
+*.safetensors
+model/
+models/
+checkpoints/
+checkpoints_*/
+weights/
+*.model
+
+# Hugging Face / Transformers / Datasets / caches
+.cache/
+.cache/huggingface/
+.cache/huggingface/hub/
+.cache/huggingface/transformers/
+.cache/huggingface/datasets/
+.huggingface/
+hf_home/
+hf_data/
+transformers_cache/
+datasets_cache/
+# local dataset folders (if you download datasets during dev)
+data/
+dataset/
+datasets/
+
+# Torch / compiled extensions
+torch_extensions/
+build_ext/
+*.so
+
+# ML experiment tracking / visualization
+wandb/
+mlruns/
+neptune/
+tensorboard/
+runs/
+events.out.tfevents.*
+
+# Common large artifacts
+*.tar.gz
+*.zip
+*.sqlite
+*.db
+*.log
+
+# Windows OneDrive / Office temp
+~$*
+~*.tmp
+
+# Optional: ignore node modules if present in repo
+node_modules/
+
+# End

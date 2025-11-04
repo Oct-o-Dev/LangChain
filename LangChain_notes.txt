@@ -1,0 +1,170 @@
+What to know before:
+
+Builder Side Percpective: 
+
+1.Transformer Architecture
+
+2.Types of Transformer
+    Encoder Only
+    Decoder Only
+    Encoder and Decoder Based
+
+3.Pretraining
+    Training Objectives
+    Tokenization Stratezies
+    Training Strategies
+    Handling Challenges
+
+4.Fine Tuning 
+    Task Specific
+    Instruction 
+    Continual
+
+5.Evaluation
+
+6.Delpoy
+
+
+UserSide Prespective:
+
+1.Building Basic LLM Apps
+    LangChain
+    Hugging Face
+    Ollama
+2.Prompt Engineering
+3.RAG
+4.Fine Tuning
+5.AI Agents
+6.LLMOps
+7.Miscellaneous
+
+************************LANG - Chain***********************
+
+LangChian is framewwork to helps in BUilding  LLM(Large Language Models) based application
+provids moduler conponents and end to end tools that help 
+developers buil complex application such as chap app , systems
+
+1.Supports major LLMOps2.Simplifies developing LLM based application3.Integration available for major developed
+4.Supports all major GenAI use cases
+
+
+Now Lets deep dive in the What is this LangChain 
+Let's Goooo
+
+Why do we need it:
+
+Schematic Srach : (learn about it in web )
+
+pdf -> AWS -> Doc Loader -> text splitter -> Embedding -> database -> 
+
+user Query -> embedding -> schematic Search -> deatabse above -> System Query (Pages + userQuery)
+ -> Brain (this is main which gives the output according to our query)
+
+ Earlier it was Hard but Now its easy using LLM
+
+ Well using the LLM is hard cause it takes lots of server load so Big Companies
+ like OpenAi , Google host them on there sever and then we can use that api link to use it
+
+ So basically instead of the Brain we are using the LLM API LINK
+
+Now to doo all of them manualy is really really very hard just thinka bout this soo much handling of the pipeline 
+Thats where we use the LangChain all we have to do is give our ideas 
+
+In LangChain we can assign different tasks in the form of the chain means the output of one is the inout of another
+
+Benefits Of LangChain
+1.Concept of Chains
+2.Moddel Agnostic Development
+3.Complete ecosystem
+4.Memory and State Handling
+
+***********************LangChain Components********************8 :
+
+1.Models 
+2.Prompts
+3.Chains
+4.Memory
+5.INdexes
+6.Agents
+
+MODELS:
+
+Models are core interference through which we interact with AI Models
+
+Language Models and Embedding Models 
+    |                   |
+    |                   |
+
+    text->text;     text-> vector(schematic search)
+
+PROMPTS:
+
+1.Dynamic and Reusable Prompts:
+2.Role-Based Prompts
+3.Few Shots Prompts
+
+
+CHAINS:
+
+we can build pipelines using this
+
+we can also make complex chains using it 
+Ex: Parallel chains and Conditional Chains
+
+INdexes
+
+1.Doc Loader
+2.Text splitter
+3.Vector Store
+4.Retrivors
+
+Indexe connect your application to external 
+knowledge source - such as PDF's , websites or database
+
+Ex: Likewe does above we upload the pdf on AWS then we does the doc loader on our server then split them 
+according to page or chapter or paragraph 
+then we embed them in the vector format the we simply store those vector in the database
+
+Now when we have a query from the user then we simply does the schematic search and retrieve some of the main pages then
+we give those pages and the query to the LLM and then we get the output
+
+MEMORY :
+
+LLM API calls are Stateless 
+u know what it means means it does'nt get stored in the server our response
+So how we will make a chatbots that why we use the LangChain and its function Memmory
+
+1.ConversationBufferMemory: stores entire message good for short chat only
+2.ConversationBufferWindowMemory: last N interactions only
+3.Summarize-Based Memory: summarize of all chat till now peridically update it
+4.Custom Memory:store specific data as per our need 
+
+
+AGENTS :
+
+well in simple it is the things jo ki kaam karke deta hai 
+now just the how to do it 
+
+we give it the access to them for the tools (Ex: Calc. , Weather) then it works using those tools 
+
+
+***************************MODELS***********************
+
+1.LAnguage Models
+    LLMs 
+    ChatModels
+2.Embedding Models
+
+ The Model Component is crucual part of frame work , designed to
+facilitate interations with various language models and embedding models
+
+Languagee Models :
+
+it is AI system designed to process , generate and understand natural language text.
+1.LLMs - models used for the raw text genration . They take a string as inout an return a string . 
+
+2.ChatModels - models that are specified for conversation tasks . Take a sequence of messages as inouts and return char messages as outputs . newer model and used more in comparison to the LLMs .
+
+Now a days mostly we use the ChatModels instead of LLMs 
+
+
