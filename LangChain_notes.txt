@@ -168,3 +168,23 @@ it is AI system designed to process , generate and understand natural language t
 Now a days mostly we use the ChatModels instead of LLMs 
 
 
+*******************MESSAGES****************************888
+
+1.System Mwssages
+2.Human messages
+3.AI messages
+
+
+**************STRUCTURED OUTPUT*************************************88
+in langchain it is refers to the practice of having language models return response well - defines
+format(JSON type) , rathat that free-form text form . This makes output to parse and work with it program automatically
+
+LLMs to get the stuctured Format output:
+1.TypedDict
+2.Pydantic
+3.JSON-Schema
+
+        TYPEDICT: a way to define dict in pythoon where we specify keys ad values should exist.
+        IT helps ensures that your dictionary followsa specific STRUCTURED
+
+        
